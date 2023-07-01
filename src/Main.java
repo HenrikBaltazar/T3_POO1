@@ -28,13 +28,13 @@ public class Main {
             scanner.nextLine(); // Limpar o buffer do scanner
             switch (escolha){
                 case 1:
-                    menu = false;
+                    System.out.println("Do nothing;");
                     return 1;
                 case 2:
-                    menu = false;
+                    System.out.println("Do nothing;");
                     return 2;
                 case 3:
-                    menu = false;
+                    System.out.println("Do nothing;");
                     return 3;
                 case 4:
                     menu = false;
@@ -67,20 +67,23 @@ public class Main {
             scanner.nextLine(); // Limpar o buffer do scanner
             switch (escolha){
                 case 1:
-
+                    menuPessoa();
                     break;
                 case 2:
+                    menuPessoa();
                     break;
                 case 3:
+                    System.out.println("Do nothing;");
                     break;
                 case 4:
+                    menuPessoa();
                     break;
                 case 5:
-                    break;
-                case 0:
+                    menu = false;
+                    System.out.println("Bye bye!");
                     break;
                 default:
-
+                    System.out.println("[ERRO] Selecione alguma das opcoes (1-5)");
             }
 
         }while(menu == true);
